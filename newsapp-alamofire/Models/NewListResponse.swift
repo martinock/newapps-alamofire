@@ -10,19 +10,19 @@ import Foundation
 
 struct ArticleSource: Decodable {
     let id: String?
-    let name: String
+    let name: String?
 }
 
 struct Article: Decodable {
     let source: ArticleSource
-    let author: String
-    let title: String
-    let description: String
-    let urlToImage: String
+    let author: String?
+    let title: String?
+    let description: String?
+    let urlToImage: String?
 }
 
 struct ArticleResponse: Decodable {
     let articles: [Article]
-    let status: String
-    let totalResults: Int
+    let status: String?
+    let totalResults: Int?
 }

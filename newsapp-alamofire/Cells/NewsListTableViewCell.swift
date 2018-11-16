@@ -20,5 +20,9 @@ class NewsListTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
+    
+    func bindWith(article: Article) {
+        newsTitleLabel.text = article.title
+    }
 
 }
