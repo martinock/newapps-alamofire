@@ -14,6 +14,7 @@
 		7F5B61D8219DDA2B003F3FB8 /* NewsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B61D7219DDA2B003F3FB8 /* NewsListTableViewCell.swift */; };
 		7F5B61DA219DDA81003F3FB8 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5B61D9219DDA81003F3FB8 /* NewsListViewController.swift */; };
 		A186CF420E50B3CF14A9F11A /* Pods_newsapp_alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095395B78A6017B99AF77890 /* Pods_newsapp_alamofire.framework */; };
+		E5D0419D219E53F700FD9E82 /* NewListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D0419C219E53F700FD9E82 /* NewListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7F5B61D9219DDA81003F3FB8 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		D46C1A3E0A414F14107FCA04 /* Pods-newsapp-alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-alamofire.release.xcconfig"; path = "Pods/Target Support Files/Pods-newsapp-alamofire/Pods-newsapp-alamofire.release.xcconfig"; sourceTree = "<group>"; };
 		D780B053E49C536A59648DCB /* Pods-newsapp-alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsapp-alamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsapp-alamofire/Pods-newsapp-alamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		E5D0419C219E53F700FD9E82 /* NewListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		7F5B61DB219DDBD2003F3FB8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E5D0419C219E53F700FD9E82 /* NewListResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F5B61DA219DDA81003F3FB8 /* NewsListViewController.swift in Sources */,
+				E5D0419D219E53F700FD9E82 /* NewListResponse.swift in Sources */,
 				7F5B61D8219DDA2B003F3FB8 /* NewsListTableViewCell.swift in Sources */,
 				7F5B61C4219DD81E003F3FB8 /* AppDelegate.swift in Sources */,
 			);
@@ -393,7 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B68EH8VRHF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "newsapp-alamofire/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -412,7 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B68EH8VRHF;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "newsapp-alamofire/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
