@@ -22,7 +22,7 @@ struct Article: Decodable {
 }
 
 struct ArticleResponse: Decodable {
-    let articles: [Article]
+    let articles: [Article]?
     let status: String?
     let totalResults: Int?
 }

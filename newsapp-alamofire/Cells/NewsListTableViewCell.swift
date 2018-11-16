@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class NewsListTableViewCell: UITableViewCell {
 
@@ -23,6 +24,17 @@ class NewsListTableViewCell: UITableViewCell {
     
     func bindWith(article: Article) {
         newsTitleLabel.text = article.title
+        
+        //NOTE: A way to load image from URL
+        if let imageUrl = article.urlToImage {
+            Alamofire.request(imageUrl).responseData{ (response) in
+                guard let data = response.data,
+                    let image = UIImage(data: data) else {
+                        return
+                }
+                self.newsImageView.image = image
+            }
+        }
     }
 
 }

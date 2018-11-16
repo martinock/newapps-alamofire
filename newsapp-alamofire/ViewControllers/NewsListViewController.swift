@@ -38,7 +38,7 @@ class NewsListViewController: UIViewController {
                 do {
                     let mappedResponse = try jsonDecoder.decode(ArticleResponse.self, from: responseData)
                     
-                    self.articles = mappedResponse.articles
+                    self.articles = mappedResponse.articles ?? []
                     
                     //NOTE: When reload data, the system will run everything on UITableViewDataSource
                     self.tableView.reloadData()
