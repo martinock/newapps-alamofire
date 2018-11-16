@@ -26,15 +26,18 @@ class NewsListTableViewCell: UITableViewCell {
         newsTitleLabel.text = article.title
         
         //NOTE: A way to load image from URL
-        if let imageUrl = article.urlToImage {
-            Alamofire.request(imageUrl).responseData{ (response) in
-                guard let data = response.data,
-                    let image = UIImage(data: data) else {
-                        return
-                }
-                self.newsImageView.image = image
-            }
-        }
+//        if let imageUrl = article.urlToImage {
+//            Alamofire.request(imageUrl).responseData{ (response) in
+//                guard let data = response.data,
+//                    let image = UIImage(data: data) else {
+//                        return
+//                }
+//                self.newsImageView.image = image
+//            }
+//        }
+        
+        //NOTE: Another way to load image (without writing above code multiple times)
+        self.newsImageView.loadImageFrom(url: URL(string: article.urlToImage ?? ""))
     }
 
 }
